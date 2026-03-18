@@ -18,7 +18,7 @@ The model predicts the probability of bankruptcy based on key financial indicato
 
 ### **API Interaction Diagram**
 
-![API Interaction Diagram](SmartSelect_20260318_193518_Samsung Notes.jpg)
+![API Interaction Diagram]("SmartSelect_20260318_193518_Samsung Notes.jpg")
 
 1. Client sends a JSON payload with company financial data.  
 2. FastAPI validates the input with Pydantic.  
