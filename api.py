@@ -12,7 +12,6 @@ selected_features = pickle.load(open("selected_features.pkl", "rb"))
 app = FastAPI(title="Bankruptcy Prediction API")
 
 
-# ✅ Define input schema manually (MUST match sanitized names)
 class InputData(BaseModel):
     Net_Value_Per_Share_B: float
     Net_Value_Per_Share_C: float
@@ -34,13 +33,13 @@ def root():
 @app.post("/predict")
 def predict(data: InputData):
     try:
-        # Convert input → array (correct order)
-        input_array = np.array([[getattr(data, feat) for feat in selected_features]])
+        input_dict = data.dict()
 
-        # Scale
+        # ✅ Direct mapping (no feature map needed)
+        input_array = np.array([[input_dict[feat] for feat in selected_features]])
+
         input_scaled = scaler.transform(input_array)
 
-        # Predict
         pred = model.predict(input_scaled)[0]
         prob = model.predict_proba(input_scaled)[0][1]
 
