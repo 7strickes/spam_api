@@ -35,13 +35,13 @@ The API expects the following **10 features**:
 {
   "Net_Value_Per_Share_B": 1.5,
   "Net_Value_Per_Share_C": 1.2,
-  "Persistent_EPS_in_Last_Four_Seasons": 0.05,
+  "Persistent_EPS_in_the_Last_Four_Seasons": 0.05,
   "Operating_Profit_Per_Share_Yuan_Yuan": 0.10,
   "Debt_ratio_percent": 40.0,
-  "Net_Worth_to_Assets": 0.6,
+  "Net_worth_Assets": 0.6,
   "Borrowing_dependency": 0.3,
   "Current_Liability_to_Assets": 0.25,
-  "Current_Liabilities_Liability": 2000.0,
+  "Current_Liability_to_Liability": 2000.0,
   "Liability_to_Equity": 1.0
 }
 ```
