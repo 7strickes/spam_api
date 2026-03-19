@@ -35,7 +35,6 @@ def predict(data: InputData):
     try:
         input_dict = data.dict()
 
-        # ✅ Direct mapping (no feature map needed)
         input_array = np.array([[input_dict[feat] for feat in selected_features]])
 
         input_scaled = scaler.transform(input_array)
