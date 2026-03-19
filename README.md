@@ -57,4 +57,8 @@ python3 -m venv .venv
 source .venv/bin/activate  # Linux/macOS
 .venv\Scripts\activate     # Windows
 ```
+```bash
+docker build -t company-bankruptcy-api .
+docker run -p 8000:8000 company-bankruptcy-api
+```
 the API will now be accessible at: http://localhost:8000/docs
