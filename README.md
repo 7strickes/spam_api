@@ -44,3 +44,16 @@ The API expects the following **10 features**:
   "Current_Liabilities_Liability": 2000.0,
   "Liability_to_Equity": 1.0
 }
+```
+---
+## Instalation
+### 1. Clone the Repository
+```bash
+git clone https://github.com/7strickes/spam_api.git
+cd spam_api
+```
+```python
+python3 -m venv .venv
+source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate     # Windows
+```
